@@ -5,3 +5,17 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}

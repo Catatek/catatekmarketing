@@ -40,9 +40,9 @@ function Flame() {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g id="Catatek" transform="translate(-950.000000, -161.000000)">
           <g id="Flame" transform="translate(950.000000, 161.000000)">
