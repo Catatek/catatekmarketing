@@ -19,3 +19,73 @@ body {
 .fadeIn-bottom {
   top: 80%;
 }
+
+.container {
+  position: relative;
+  transform-origin: center bottom;
+  animation-name: flicker;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.flame {
+  bottom: 0;
+  position: absolute;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.cir {
+  margin: 0 0 5em 1em;
+}
+
+@keyframes flicker {
+  0% {
+    transform: rotate(-1deg);
+  }
+  20% {
+    transform: rotate(1deg);
+  }
+  40% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(1deg) scaleY(1.04);
+  }
+  80% {
+    transform: rotate(-2deg) scaleY(0.92);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes circles {
+  50% {
+    transform: translateY(-6em) scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cirGroup1 {
+  animation: 1.6s circles infinite;
+  -webkit-animation-name: circles;
+  -webkit-animation-duration: 1.6s;
+}
+
+.cirGroup2 {
+  animation: 3s circles infinite;
+  -webkit-animation-name: circles;
+  -webkit-animation-duration: 3s;
+}
+
+.cirGroup3 {
+  animation: 6s circles infinite;
+  -webkit-animation-name: circles;
+  -webkit-animation-duration: 6s;
+}
