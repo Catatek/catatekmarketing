@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Column, Text, Row, Title1 } from "../theme/index";
+import { Text, Row } from "../theme/index";
 
 const Wrapper = styled.div`
   background-color: ${props => props.color};

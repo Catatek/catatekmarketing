@@ -35,8 +35,7 @@ export const Text = styled.p`
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   line-height: 2.4em;
-  margin: 0;
-  margin: ${props => props.margin};
+  margin: ${props => props.margin || "0"};
   ${props =>
     props.small &&
     css`

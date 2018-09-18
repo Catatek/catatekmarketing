@@ -49,9 +49,9 @@ class App extends Component {
         <Navigation />
         <Splash />
         <Portfolio work={this.state.portfolio} />
-        <Content1 title="Fueled by passion" />
+        <Content1 type="description" title="Fueled by passion" />
         <Content2 type="services" color="#754d63" title="Services" />
-        <Content1 title="Technologists with a purpose" />
+        <Content1 type="avatars" title="Technologists with a purpose" />
         <Content2 type="contact" color="#C93F50" title="Contact" />
         <Footer />
       </div>
