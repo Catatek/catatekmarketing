@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import Navigation from "./components/shared/Navigation";
 import Splash from "./components/sections/Splash";
 import Portfolio from "./components/sections/Portfolio";
+import Content1 from "./components/shared/Content1";
+import Content2 from "./components/shared/Content2";
+import Footer from "./components/shared/Footer";
 
 class App extends Component {
   constructor(props) {
@@ -46,6 +49,11 @@ class App extends Component {
         <Navigation />
         <Splash />
         <Portfolio work={this.state.portfolio} />
+        <Content1 title="Fueled by passion" />
+        <Content2 type="services" color="#754d63" title="Services" />
+        <Content1 title="Technologists with a purpose" />
+        <Content2 type="contact" color="#C93F50" title="Contact" />
+        <Footer />
       </div>
     );
   }

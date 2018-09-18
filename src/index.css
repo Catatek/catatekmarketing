@@ -38,10 +38,6 @@ body {
   transition: all 0.4s ease-in-out 0s;
 }
 
-.cir {
-  margin: 0 0 5em 1em;
-}
-
 @keyframes flicker {
   0% {
     transform: rotate(-1deg);
@@ -74,18 +70,12 @@ body {
 
 .cirGroup1 {
   animation: 1.6s circles infinite;
-  -webkit-animation-name: circles;
-  -webkit-animation-duration: 1.6s;
 }
 
 .cirGroup2 {
   animation: 3s circles infinite;
-  -webkit-animation-name: circles;
-  -webkit-animation-duration: 3s;
 }
 
 .cirGroup3 {
   animation: 6s circles infinite;
-  -webkit-animation-name: circles;
-  -webkit-animation-duration: 6s;
 }

@@ -44,8 +44,15 @@ function Flame() {
       version="1.1"
     >
       <g className="cir" data-name="Layer 5">
-        <circle className="cls-1 cirGroup1" cx="59.04" cy="98.87" r="3.48" />
         <circle
+          fill="#754d63"
+          className="cls-1 cirGroup1"
+          cx="59.04"
+          cy="98.87"
+          r="3.48"
+        />
+        <circle
+          fill="#754d63"
           id="my-circle"
           className="cls-1 cirGroup2"
           cx="35.53"
@@ -53,15 +60,29 @@ function Flame() {
           r="6.31"
         />
         <circle
+          fill="#754d63"
           id="my-circle1"
           className="cls-1 cirGroup2"
           cx="159.7"
           cy="173.67"
           r="3.47"
         />
-        <circle className="cls-1 cirGroup3" cx="48.51" cy="159.07" r="3.47" />
-        <circle className="cls-1 cirGroup3" cx="141.07" cy="137.56" r="2.45" />
         <circle
+          fill="#754d63"
+          className="cls-1 cirGroup3"
+          cx="48.51"
+          cy="159.07"
+          r="3.47"
+        />
+        <circle
+          fill="#754d63"
+          className="cls-1 cirGroup3"
+          cx="141.07"
+          cy="137.56"
+          r="2.45"
+        />
+        <circle
+          fill="#754d63"
           id="my-circle2"
           className="cls-1 cirGroup2"
           cx="100.67"
@@ -69,7 +90,6 @@ function Flame() {
           r="2.45"
         />
       </g>
-
       <g
         id="Page-1"
         stroke="none"

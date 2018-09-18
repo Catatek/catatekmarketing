@@ -18,6 +18,7 @@ export const Row = styled.div`
   margin: ${props => props.margin};
   align-items: ${props => props.alignitems};
   justify-content: ${props => props.justifycontent};
+  position: relative;
 `;
 
 export const Column = styled.div`
@@ -35,11 +36,21 @@ export const Text = styled.p`
   font-weight: 600;
   line-height: 2.4em;
   margin: 0;
+  margin: ${props => props.margin};
   ${props =>
     props.small &&
     css`
       color: #fff;
       font-size: 22px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
+      line-height: 2em;
+    `};
+  ${props =>
+    props.large &&
+    css`
+      color: #fff;
+      font-size: 48px;
       font-family: "Raleway", sans-serif;
       font-weight: 400;
       line-height: 2em;
