@@ -1,19 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import { Line, Column } from "../theme/index";
 
-const Row = styled.div`
+const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   height: 100%;
   width: 100%;
   margin: 5em 0 0 0;
-`;
-
-const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin: ${props => props.margin};
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
 `;
 
 const Title = styled.h1`
@@ -23,15 +22,15 @@ const Title = styled.h1`
   font-family: "Raleway", sans-serif;
   color: ${props => props.color || "#754D63"};
   margin: 0;
+  @media (max-width: 500px) {
+    font-size: 3em;
+  }
 `;
 
-const Line = styled.div`
-  width: 136px;
-  height: 14px;
-  background-color: #c93f50;
-  position: absolute;
-  left: 0;
-  bottom: 17em;
+const StyledColumn = styled(Column)`
+  @media (max-width: 768px) {
+    margin-bottom: 1em;
+  }
 `;
 
 function Flame() {
@@ -128,16 +127,16 @@ function Flame() {
 
 export default function Splash() {
   return (
-    <Row>
+    <Wrapper>
       <Column>
         <Title>Make</Title>
         <Title>Something</Title>
         <Title color="#C93F50">Amazing</Title>
       </Column>
-      <Column>
+      <StyledColumn>
         <Flame />
-      </Column>
-      <Line />
-    </Row>
+      </StyledColumn>
+      <Line primary bottom="17em" />
+    </Wrapper>
   );
 }

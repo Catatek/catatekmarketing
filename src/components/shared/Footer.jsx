@@ -26,8 +26,12 @@ export default function Footer() {
   return (
     <Wrapper>
       <Row margin="0 0 0 1em">
-        <I src={Github} alt="Catatek icons" />
-        <I src={Medium} alt="Catatek icons" />
+        <a href="https://github.com/Catatek" target="_blank">
+          <I src={Github} alt="Catatek icons" />
+        </a>
+        <a href="https://medium.com/@wwwhatley" target="_blank">
+          <I src={Medium} alt="Catatek icons" />
+        </a>
       </Row>
       <Img src={Logo} alt="Catatek Logo" />
     </Wrapper>

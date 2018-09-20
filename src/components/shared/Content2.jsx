@@ -1,20 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Text, Row } from "../theme/index";
+import { Text, Row, Line, ContentTitle } from "../theme/index";
 
 const Wrapper = styled.div`
   background-color: ${props => props.color};
   padding: 5em 0;
-`;
-
-const Line = styled.div`
-  width: 136px;
-  height: 14px;
-  background-color: #fff;
-  position: absolute;
-  right: 0;
-  bottom: 1.5em;
 `;
 
 const Title = styled.h2`
@@ -33,8 +24,8 @@ export default function Content2({ title, color, type }) {
   return (
     <Wrapper color={color}>
       <Row justifycontent="flex-end">
-        <Line />
-        <Title color="#fff">{title}</Title>
+        <Line secondary bottom="1.5em" />
+        <ContentTitle color="#fff">{title}</ContentTitle>
       </Row>
       <Row margin="2em 0 5em 9em" width="60%">
         {type === "services" && (
@@ -66,10 +57,14 @@ export default function Content2({ title, color, type }) {
               listening to your vision over a cup of joe.
             </Text>
             <Row>
-              <Text margin="0 3em 0 0" small>
-                404.518.1276
-              </Text>
-              <Text small>hello@catatek.com</Text>
+              <a href="tel:4045181276">
+                <Text margin="0 3em 0 0" small>
+                  404.518.1276
+                </Text>
+              </a>
+              <a href="mailto:hello@catatek.com">
+                <Text small>hello@catatek.com</Text>
+              </a>
             </Row>
           </div>
         )}

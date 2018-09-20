@@ -16,6 +16,11 @@ const Wrapper = styled.div`
   justify-content: center;
   height: 100%;
   margin: 6em 0 5em 0;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
 `;
 
 const Img = styled.img`
@@ -62,6 +67,19 @@ const Div = styled.div`
   border-radius: 3px;
   cursor: pointer;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  @media (max-width: 768px) {
+    width: 350px;
+    height: 379px;
+  }
+`;
+
+const StyledRow = styled(Row)`
+  width: 80%;
+  margin: 2em 0;
+  @media (max-width: 500px) {
+    width: 95%;
+    margin: 1em 0;
+  }
 `;
 
 function PortfolioItem({ title, description }) {
@@ -100,21 +118,21 @@ export default class Portfolio extends Component {
               />
             );
           })}
-          <Row width="80%" margin="2em 0">
+          <StyledRow>
             <Text>
               A little taste of our accomplishments… ranging from
               engineering-intensive to creative overload.
             </Text>
-          </Row>
+          </StyledRow>
         </Column>
         <Column alignitems="center">
-          <Row width="80%" margin="2em 0">
+          <StyledRow>
             <Text>
               Catatek is a full service engineering agency with the experience
               to overcome any technological challenge your organization may
               face.
             </Text>
-          </Row>
+          </StyledRow>
 
           {second.map((key, index) => {
             return (

@@ -12,6 +12,17 @@ export const Title2 = styled.h2`
   font-family: "Raleway", sans-serif;
 `;
 
+export const ContentTitle = styled.h2`
+  font-size: 3.75em;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  color: ${props => props.color || "#754D63"};
+  margin: ${props => (props.content1 ? "0 0 0 2.5em" : "0 2.5em 0 0")};
+  @media (max-width: 500px) {
+    margin: 0;
+  }
+`;
+
 export const Row = styled.div`
   display: flex;
   width: ${props => props.width};
@@ -27,6 +38,10 @@ export const Column = styled.div`
   width: 100%;
   align-items: ${props => props.alignitems};
   justify-content: ${props => props.justifycontent};
+  margin: ${props => props.margin};
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 export const Text = styled.p`
@@ -53,5 +68,30 @@ export const Text = styled.p`
       font-family: "Raleway", sans-serif;
       font-weight: 400;
       line-height: 2em;
+    `};
+`;
+
+export const Line = styled.div`
+  width: 136px;
+  height: 14px;
+  position: absolute;
+  bottom: ${props => props.bottom};
+  @media (max-width: 768px) {
+    width: 100px;
+  }
+  @media (max-width: 500px) {
+    display: none;
+  }
+  ${props =>
+    props.primary &&
+    css`
+      left: 0;
+      background-color: #c93f50;
+    `};
+  ${props =>
+    props.secondary &&
+    css`
+      right: 0;
+      background-color: #fff;
     `};
 `;
