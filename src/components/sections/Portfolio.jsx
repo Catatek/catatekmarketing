@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   width: 100%;
   justify-content: center;
   height: 100%;
-  margin: 6em 0 5em 0;
+  margin: 6em auto;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     justify-content: flex-start;
@@ -107,8 +107,8 @@ export default class Portfolio extends Component {
     const second = work.slice(2, 4);
 
     return (
-      <Wrapper>
-        <Column alignitems="center">
+      <Wrapper id="work">
+        <Column alignitems="center" width="100%">
           {first.map((key, index) => {
             return (
               <PortfolioItem
@@ -125,7 +125,7 @@ export default class Portfolio extends Component {
             </Text>
           </StyledRow>
         </Column>
-        <Column alignitems="center">
+        <Column alignitems="center" width="100%">
           <StyledRow>
             <Text>
               Catatek is a full service engineering agency with the experience

@@ -4,7 +4,7 @@ import William from "../../assets/william.png";
 import { Column, Text, Row, Line, ContentTitle } from "../theme/index";
 
 const Wrapper = styled.div`
-  padding: 5em 0;
+  padding: 2em 0;
 `;
 
 const Img = styled.img`
@@ -15,8 +15,8 @@ const Img = styled.img`
 const StyledRow = styled(Row)`
   margin: 4em 0 2.5em 0;
   width: 100%;
-  alignitems: center;
-  justifycontent: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -24,7 +24,7 @@ const StyledRow = styled(Row)`
 
 const StyledTextRow = styled(Row)`
   width: 80%;
-  margin: 2em 0;
+  margin: 4em auto;
   @media (max-width: 500px) {
     width: 95%;
     margin: 1em 0;
@@ -62,7 +62,7 @@ export default function Content1({ title, type }) {
   ];
 
   return (
-    <Wrapper>
+    <Wrapper id={type === "avatars" && "who"}>
       <Row>
         <Line primary bottom="1.9em" />
         <ContentTitle content1 color="#C93F50">

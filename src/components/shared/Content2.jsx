@@ -5,15 +5,7 @@ import { Text, Row, Line, ContentTitle } from "../theme/index";
 
 const Wrapper = styled.div`
   background-color: ${props => props.color};
-  padding: 5em 0;
-`;
-
-const Title = styled.h2`
-  font-size: 3.75em;
-  font-weight: 600;
-  font-family: "Raleway", sans-serif;
-  color: ${props => props.color || "#754D63"};
-  margin: 0 2.5em 0 0;
+  padding: 2em 0;
 `;
 
 const Span = styled.span`
@@ -22,12 +14,12 @@ const Span = styled.span`
 
 export default function Content2({ title, color, type }) {
   return (
-    <Wrapper color={color}>
+    <Wrapper color={color} id={type === "services" && "services"}>
       <Row justifycontent="flex-end">
         <Line secondary bottom="1.5em" />
         <ContentTitle color="#fff">{title}</ContentTitle>
       </Row>
-      <Row margin="2em 0 5em 9em" width="60%">
+      <Row margin="2em auto" width="60%">
         {type === "services" && (
           <div>
             <Text white large>

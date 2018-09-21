@@ -35,7 +35,7 @@ export const Row = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: ${props => props.width};
   align-items: ${props => props.alignitems};
   justify-content: ${props => props.justifycontent};
   margin: ${props => props.margin};
@@ -67,7 +67,14 @@ export const Text = styled.p`
       font-size: 48px;
       font-family: "Raleway", sans-serif;
       font-weight: 400;
-      line-height: 2em;
+      line-height: 1.8em;
+    `};
+  ${props =>
+    props.nav &&
+    css`
+      font-size: 18px;
+      margin: 0 0.5em;
+      font-weight: 400;
     `};
 `;
 
