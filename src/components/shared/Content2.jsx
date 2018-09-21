@@ -48,7 +48,7 @@ export default function Content2({ title, color, type }) {
               We love coffee, and we love people—nothing makes us happier than
               listening to your vision over a cup of joe.
             </Text>
-            <Row>
+            <Row margin="2.5em 0 0 0">
               <a href="tel:4045181276">
                 <Text margin="0 3em 0 0" small>
                   404.518.1276
