@@ -76,11 +76,20 @@ export const Text = styled.p`
       margin: 0 0.5em;
       font-weight: 400;
     `};
+  ${props =>
+    props.services &&
+    css`
+      font-size: 16px;
+      margin: 0 0.5em;
+      font-weight: 400;
+      color: #fff;
+    `};
 `;
 
 export const Line = styled.div`
   width: 136px;
   height: 14px;
+  border-radius: 3px;
   position: absolute;
   bottom: ${props => props.bottom};
   @media (max-width: 768px) {

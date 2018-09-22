@@ -25,6 +25,7 @@ const Wrapper = styled.div`
 
 const Img = styled.img`
   width: 100%;
+  height: 100%;
 `;
 
 const Details = styled.div`
@@ -82,18 +83,26 @@ const StyledRow = styled(Row)`
   }
 `;
 
-function PortfolioItem({ title, description }) {
+function PortfolioItem({ title, description, image, services }) {
   return (
     <div style={{ margin: "1em 0" }}>
       <Div className="content">
         <Overlay className="content-overlay" />
-        <Img className="content-image" src={Background} />
+        <Img className="content-image" src={image} />
         <Details className="content-details fadeIn-bottom">
           <Row alignitems="center">
             <Line />
             <Text white>{title}</Text>
           </Row>
           <Text small>{description}</Text>
+          {services &&
+            services.map((key, index) => {
+              return (
+                <Text services key={index}>
+                  {key}
+                </Text>
+              );
+            })}
         </Details>
       </Div>
     </div>
@@ -115,6 +124,8 @@ export default class Portfolio extends Component {
                 key={index}
                 title={key.title}
                 description={key.description}
+                image={key.image}
+                services={key.services}
               />
             );
           })}
@@ -140,6 +151,8 @@ export default class Portfolio extends Component {
                 key={index}
                 title={key.title}
                 description={key.description}
+                image={key.image}
+                services={key.services}
               />
             );
           })}

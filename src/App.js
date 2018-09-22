@@ -5,6 +5,8 @@ import Portfolio from "./components/sections/Portfolio";
 import Content1 from "./components/shared/Content1";
 import Content2 from "./components/shared/Content2";
 import Footer from "./components/shared/Footer";
+import FeedForward from "./assets/feedForwardMock.png";
+import ShareCropper from "./assets/farmAppMock.png";
 
 class App extends Component {
   constructor(props) {
@@ -19,24 +21,54 @@ class App extends Component {
       return {
         portfolio: [
           {
+            image: FeedForward,
             title: "Feed Forward",
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            services: [
+              "UI/UX",
+              "Native Development",
+              "Web Development",
+              "Creative Services",
+              "Business Consulting"
+            ]
           },
           {
-            title: "Subchannel",
-            description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-          },
-          {
-            title: "AchieveCE",
-            description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-          },
-          {
+            image: ShareCropper,
             title: "ShareCropper",
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            services: [
+              "UI/UX",
+              "Native Development",
+              "Web Development",
+              "Creative Services",
+              "Business Consulting"
+            ]
+          },
+          {
+            image: ShareCropper,
+            title: "Subchannel",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            services: [
+              "UI/UX",
+              "Web Design",
+              "Web Development",
+              "Creative Services",
+              "Business Consulting"
+            ]
+          },
+          {
+            image: FeedForward,
+            title: "AchieveCE",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            services: [
+              "Web Development",
+              "Creative Services",
+              "Business Consulting"
+            ]
           }
         ]
       };
