@@ -9,6 +9,9 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
 `;
 
 const Img = styled.img`
@@ -17,12 +20,20 @@ const Img = styled.img`
   margin-left: 2em;
 `;
 
+const StyledRow = styled(Row)`
+  align-items: center;
+  margin: 0 2em 0 0;
+  @media (max-width: 500px) {
+    display: none;
+  }
+`;
+
 export default class Navigation extends Component {
   render() {
     return (
       <Wrapper>
         <Img src={Logo} alt="Catatek Logo" />
-        <Row alignitems="center" margin="0 2em 0 0">
+        <StyledRow>
           <Text nav>
             <a href="#work">Work</a>
           </Text>
@@ -32,7 +43,7 @@ export default class Navigation extends Component {
           <Text nav>
             <a href="#services">Services</a>
           </Text>
-        </Row>
+        </StyledRow>
       </Wrapper>
     );
   }

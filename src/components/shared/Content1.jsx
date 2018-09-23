@@ -8,15 +8,14 @@ const Wrapper = styled.div`
 `;
 
 const Img = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 `;
 
 const StyledRow = styled(Row)`
-  margin: 4em 0 2.5em 0;
+  margin: 2.5em 0;
+  padding: 2em 0;
   width: 100%;
-  align-items: center;
-  justify-content: space-evenly;
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -31,9 +30,18 @@ const StyledTextRow = styled(Row)`
   }
 `;
 
+const StyledColumn = styled(Column)`
+  width: 40%;
+  @media (max-width: 700px) {
+    width: 90%;
+    align-items: center;
+    padding: 0 0.25em;
+  }
+`;
+
 function Avatar({ avatar, name, title }) {
   return (
-    <Column alignitems="center" margin=".5em 0">
+    <Column alignitems="center" margin=".5em 3.5em">
       <Img src={avatar} />
       <Text margin="1em 0 0 0">{name}</Text>
       <Text>{title}</Text>
@@ -42,24 +50,13 @@ function Avatar({ avatar, name, title }) {
 }
 
 export default function Content1({ title, type }) {
-  const avatars = [
-    {
-      avatar: William,
-      name: "William",
-      title: "Developer"
-    },
-    { avatar: William, name: "Raj", title: "Developer" },
-    {
-      avatar: William,
-      name: "William",
-      title: "Developer"
-    },
-    {
-      avatar: William,
-      name: "William",
-      title: "Developer"
-    }
-  ];
+  // const avatars = [
+  //   {
+  //     avatar: William,
+  //     name: "William",
+  //     title: "Developer"
+  //   }
+  // ];
 
   return (
     <Wrapper id={type === "avatars" && "who"}>
@@ -81,7 +78,7 @@ export default function Content1({ title, type }) {
       )}
       {type === "avatars" && (
         <StyledRow>
-          {avatars.map((key, index) => {
+          {/* {avatars.map((key, index) => {
             return (
               <Avatar
                 key={index}
@@ -90,7 +87,23 @@ export default function Content1({ title, type }) {
                 title={key.title}
               />
             );
-          })}
+          })} */}
+          <Avatar avatar={William} />
+          <StyledColumn>
+            <Text lineheight="1.2em">William W. Whatley</Text>
+            <Text usertitle lineheight="1.2em">
+              Developer
+            </Text>
+            <Text bio>
+              I am passionately curious about innovative technologies, business,
+              teaching, and a sustainable future. I live a life guided agilely
+              in principle, with open lenses and mind towards solving
+              problems--I'm rooted in belief that continued self-development is
+              one of the most important virtues; as times change and problems
+              are solved, more issues to fix emerge. I commit to a life of
+              problem solving.
+            </Text>
+          </StyledColumn>
         </StyledRow>
       )}
     </Wrapper>

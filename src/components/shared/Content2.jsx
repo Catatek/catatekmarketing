@@ -12,6 +12,15 @@ const Span = styled.span`
   color: #c93f50;
 `;
 
+const StyledRow = styled(Row)`
+  margin: 2em auto;
+  width: 60%;
+  @media (max-width: 768px) {
+   width: 95%;
+   margin: 2em 0;
+   justify-content: center;
+`;
+
 export default function Content2({ title, color, type }) {
   return (
     <Wrapper color={color} id={type === "services" && "services"}>
@@ -19,7 +28,7 @@ export default function Content2({ title, color, type }) {
         <Line secondary bottom="1.5em" />
         <ContentTitle color="#fff">{title}</ContentTitle>
       </Row>
-      <Row margin="2em auto" width="60%">
+      <StyledRow>
         {type === "services" && (
           <div>
             <Text white large>
@@ -60,7 +69,7 @@ export default function Content2({ title, color, type }) {
             </Row>
           </div>
         )}
-      </Row>
+      </StyledRow>
     </Wrapper>
   );
 }

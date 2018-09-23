@@ -18,8 +18,9 @@ export const ContentTitle = styled.h2`
   font-family: "Raleway", sans-serif;
   color: ${props => props.color || "#754D63"};
   margin: ${props => (props.content1 ? "0 0 0 2.5em" : "0 2.5em 0 0")};
-  @media (max-width: 500px) {
-    margin: 0;
+  @media (max-width: 700px) {
+    margin: 0 1em;
+    font-size: 2em;
   }
 `;
 
@@ -49,7 +50,7 @@ export const Text = styled.p`
   font-size: 28px;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  line-height: 2.4em;
+  line-height: ${props => props.lineheight || "2.4em"};
   margin: ${props => props.margin || "0"};
   ${props =>
     props.small &&
@@ -68,6 +69,10 @@ export const Text = styled.p`
       font-family: "Raleway", sans-serif;
       font-weight: 400;
       line-height: 1.8em;
+      @media (max-width: 768px) {
+        font-size: 30px;
+        line-height: 1.6em;
+      }
     `};
   ${props =>
     props.nav &&
@@ -84,6 +89,22 @@ export const Text = styled.p`
       font-weight: 400;
       color: #fff;
     `};
+  ${props =>
+    props.bio &&
+    css`
+      font-size: 16px;
+      font-weight: 400;
+      color: #47566e;
+      line-height: 1.8em;
+    `};
+  ${props =>
+    props.usertitle &&
+    css`
+      font-size: 24px;
+      font-weight: 400;
+      color: #c93f50;
+      margin: 0.25em 0;
+    `};
 `;
 
 export const Line = styled.div`
@@ -93,11 +114,9 @@ export const Line = styled.div`
   position: absolute;
   bottom: ${props => props.bottom};
   @media (max-width: 768px) {
-    width: 100px;
-  }
-  @media (max-width: 500px) {
     display: none;
   }
+
   ${props =>
     props.primary &&
     css`

@@ -7,6 +7,7 @@ import Content2 from "./components/shared/Content2";
 import Footer from "./components/shared/Footer";
 import FeedForward from "./assets/feedForwardMock.png";
 import ShareCropper from "./assets/farmAppMock.png";
+import Subchannel from "./assets/subchannelMock.png";
 
 class App extends Component {
   constructor(props) {
@@ -34,20 +35,7 @@ class App extends Component {
             ]
           },
           {
-            image: ShareCropper,
-            title: "ShareCropper",
-            description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-            services: [
-              "UI/UX",
-              "Native Development",
-              "Web Development",
-              "Creative Services",
-              "Business Consulting"
-            ]
-          },
-          {
-            image: ShareCropper,
+            image: Subchannel,
             title: "Subchannel",
             description:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
@@ -60,11 +48,13 @@ class App extends Component {
             ]
           },
           {
-            image: FeedForward,
-            title: "AchieveCE",
+            image: ShareCropper,
+            title: "ShareCropper",
             description:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
             services: [
+              "UI/UX",
+              "Native Development",
               "Web Development",
               "Creative Services",
               "Business Consulting"

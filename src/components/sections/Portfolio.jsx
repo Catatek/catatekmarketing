@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Column, Text, Row } from "../theme/index";
-import Background from "../../assets/exampke.png";
 
 const Line = styled.div`
   background-color: #fff;
