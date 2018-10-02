@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { Line, Column } from "../theme/index";
+import { Line, Column, Row } from "../theme/index";
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
-  height: 100%;
+  height: calc(80vh - 105px);
+  bottom: 0;
+  align-items: center;
   width: 100%;
-  margin: 5em 0 0 0;
+  position: relative;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     justify-content: flex-start;
@@ -16,7 +18,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 5.6em;
+  font-size: 6em;
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
@@ -136,7 +138,7 @@ export default function Splash() {
       <StyledColumn>
         <Flame />
       </StyledColumn>
-      <Line primary bottom="17em" />
+      <Line primary bottom="13.5em" />
     </Wrapper>
   );
 }

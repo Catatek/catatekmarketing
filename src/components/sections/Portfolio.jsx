@@ -61,8 +61,10 @@ const Overlay = styled.div`
 const Div = styled.div`
   position: relative;
   margin: auto;
-  width: 515px;
-  height: 558px;
+  width: 100%;
+  height: 100%;
+  max-width: 650px;
+  max-height: 700px;
   margin: 1em;
   border-radius: 3px;
   cursor: pointer;

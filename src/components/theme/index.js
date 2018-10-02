@@ -86,7 +86,7 @@ export const Text = styled.p`
     css`
       font-size: 16px;
       margin: 0 0.5em;
-      font-weight: 400;
+      font-weight: 600;
       color: #fff;
     `};
   ${props =>

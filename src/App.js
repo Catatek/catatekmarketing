@@ -25,7 +25,7 @@ class App extends Component {
             image: FeedForward,
             title: "Feed Forward",
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+              "Feed Forward is a mobile software as a service (SaaS) offering designed to assist post-graduate medical students with completing their required professional activities, while holding academic medical doctors accountable with evaluations. Our infrastructure will offer organizations, such as medical schools, hospitals, and residency programs greater insight and analytics into how their academic body is performing.",
             services: [
               "UI/UX",
               "Native Development",
@@ -38,7 +38,7 @@ class App extends Component {
             image: Subchannel,
             title: "Subchannel",
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+              "Subchannel is a web-based software as a service (SaaS) offering that enables creators to launch their own video-streaming service and create cashflows from subscription models. Our mission is to empower creators to partner in long term, sustainable broadcast businesses that enriches the world. ",
             services: [
               "UI/UX",
               "Web Design",
@@ -51,7 +51,7 @@ class App extends Component {
             image: ShareCropper,
             title: "ShareCropper",
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+              "ShareCropper is a native application that enables hobbyist and professional farmers alike to sell their produce direct to the community by creating virtual, localized farmers markets. Our mission is to localize produce consumption by providing an an easy-to-use interface to sell your crops online. Catatek is the original ideator and developers behind ShareCropper.",
             services: [
               "UI/UX",
               "Native Development",
@@ -59,6 +59,13 @@ class App extends Component {
               "Creative Services",
               "Business Consulting"
             ]
+          },
+          {
+            image: ShareCropper,
+            title: "AchieveCE",
+            description:
+              "AchieveCE is a web-based application that enables industry professionals to take continued education courses as mandated by the state they're licensed in. ",
+            services: ["Web Development"]
           }
         ]
       };
