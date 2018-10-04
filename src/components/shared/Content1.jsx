@@ -4,7 +4,13 @@ import William from "../../assets/william.png";
 import { Column, Text, Row, Line, ContentTitle } from "../theme/index";
 
 const Wrapper = styled.div`
-  padding: 2em 0;
+  padding: 6em 0;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+  }
 `;
 
 const Img = styled.img`
@@ -18,6 +24,7 @@ const StyledRow = styled(Row)`
   width: 100%;
   @media (max-width: 768px) {
     flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -35,7 +42,7 @@ const StyledColumn = styled(Column)`
   @media (max-width: 700px) {
     width: 90%;
     align-items: center;
-    padding: 0 0.25em;
+    // padding: 0 0.25em;
   }
 `;
 
@@ -50,14 +57,6 @@ function Avatar({ avatar, name, title }) {
 }
 
 export default function Content1({ title, type }) {
-  // const avatars = [
-  //   {
-  //     avatar: William,
-  //     name: "William",
-  //     title: "Developer"
-  //   }
-  // ];
-
   return (
     <Wrapper id={type === "avatars" && "who"}>
       <Row>
@@ -78,16 +77,6 @@ export default function Content1({ title, type }) {
       )}
       {type === "avatars" && (
         <StyledRow>
-          {/* {avatars.map((key, index) => {
-            return (
-              <Avatar
-                key={index}
-                avatar={key.avatar}
-                name={key.name}
-                title={key.title}
-              />
-            );
-          })} */}
           <Avatar avatar={William} />
           <StyledColumn>
             <Text lineheight="1.2em">William W. Whatley</Text>

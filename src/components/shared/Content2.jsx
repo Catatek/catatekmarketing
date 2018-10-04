@@ -5,7 +5,15 @@ import { Text, Row, Line, ContentTitle } from "../theme/index";
 
 const Wrapper = styled.div`
   background-color: ${props => props.color};
-  padding: 2em 0;
+  padding: 6em 0 1em 0;
+  min-height: 75vh;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    padding: 3em 0;
+  }
 `;
 
 const Span = styled.span`

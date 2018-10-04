@@ -16,8 +16,11 @@ const Wrapper = styled.div`
 
 const Img = styled.img`
   width: 202px;
-  height: 57px;
   margin-left: 2em;
+  height: 57px;
+  @media (max-width: 500px) {
+    margin-left: 0em;
+  }
 `;
 
 const StyledRow = styled(Row)`

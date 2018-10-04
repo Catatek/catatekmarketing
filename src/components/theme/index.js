@@ -52,6 +52,9 @@ export const Text = styled.p`
   font-weight: 600;
   line-height: ${props => props.lineheight || "2.4em"};
   margin: ${props => props.margin || "0"};
+  @media (max-width: 700px) {
+    font-size: 1em;
+  }
   ${props =>
     props.small &&
     css`
