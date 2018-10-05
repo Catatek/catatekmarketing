@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Line, Column, Row } from "../theme/index";
+import { Line, Column } from "../theme/index";
 
 const Wrapper = styled.div`
   display: flex;

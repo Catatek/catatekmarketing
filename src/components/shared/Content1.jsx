@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import William from "../../assets/william.png";
 import { Column, Text, Row, Line, ContentTitle } from "../theme/index";
+import Linkedin from "../../assets/linkedin.svg";
+import Github from "../../assets/github.svg";
+import Medium from "../../assets/medium.svg";
 
 const Wrapper = styled.div`
   padding: 6em 0;
@@ -22,6 +25,14 @@ const StyledRow = styled(Row)`
   margin: 2.5em 0;
   padding: 2em 0;
   width: 100%;
+  justify-content: space-evenly;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+const StyledRow2 = styled(Row)`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -38,12 +49,22 @@ const StyledTextRow = styled(Row)`
 `;
 
 const StyledColumn = styled(Column)`
-  width: 40%;
+  width: 30%;
   @media (max-width: 700px) {
     width: 90%;
     align-items: center;
-    // padding: 0 0.25em;
   }
+`;
+
+const Span = styled.span`
+  font-size: 3em;
+  color: #47566e;
+`;
+
+const Icon = styled.img`
+  color: #47566e;
+  height: 25px;
+  margin-left: ${props => props.marginleft};
 `;
 
 function Avatar({ avatar, name, title }) {
@@ -92,7 +113,36 @@ export default function Content1({ title, type }) {
               are solved, more issues to fix emerge. I commit to a life of
               problem solving.
             </Text>
+            <Row margin="1em 0 0 0" alignitems="center">
+              <a
+                href="https://www.linkedin.com/in/william-whatley-9b141b148/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Icon src={Linkedin} alt="Linkedin Icon" />
+              </a>
+              <a
+                href="https://github.com/wwwhatley"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Icon marginleft="1em" src={Github} alt="Github Icon" />
+              </a>
+              <a
+                href="https://medium.com/@wwwhatley"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Icon marginleft="1em" src={Medium} alt="Medium Icon" />
+              </a>
+            </Row>
           </StyledColumn>
+          <StyledRow2 alignitems="center" justifycontent="space-evenly">
+            <Span>+</Span>
+            <StyledColumn justifycontent="center" alignitems="center">
+              <Text>Many, many others from all over the world...</Text>
+            </StyledColumn>
+          </StyledRow2>
         </StyledRow>
       )}
     </Wrapper>
