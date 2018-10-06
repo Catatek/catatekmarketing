@@ -62,7 +62,7 @@ class App extends Component {
           },
           {
             image: ShareCropper,
-            title: "AchieveCE",
+            title: "Engagitech",
             description:
               "AchieveCE is a web-based application that enables industry professionals to take continued education courses as mandated by the state they're licensed in. ",
             services: ["Web Development"]

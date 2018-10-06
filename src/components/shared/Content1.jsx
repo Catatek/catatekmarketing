@@ -102,7 +102,7 @@ export default function Content1({ title, type }) {
           <StyledColumn>
             <Text lineheight="1.2em">William W. Whatley</Text>
             <Text usertitle lineheight="1.2em">
-              Developer
+              Developer | Designer
             </Text>
             <Text bio>
               I am passionately curious about innovative technologies, business,
