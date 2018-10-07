@@ -20,12 +20,16 @@ const Img = styled.img`
 
 const I = styled.img`
   margin: 0 1em;
+  @media (max-width: 768px) {
+    width: 30px;
+    height: 30px;
+  }
 `;
 
 export default function Footer() {
   return (
     <Wrapper>
-      <Row margin="0 0 0 1em">
+      <Row margin="0 0 0 1em" alignitems="center">
         <a
           href="https://github.com/Catatek"
           rel="noopener noreferrer"

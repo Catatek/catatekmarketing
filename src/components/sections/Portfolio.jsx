@@ -7,6 +7,10 @@ const Line = styled.div`
   width: 125px;
   height: 12px;
   margin: 0 1em 0 -2em;
+  @media (max-width: 525px) {
+    width: 74px;
+    height: 7px;
+  }
 `;
 
 const Wrapper = styled.div`

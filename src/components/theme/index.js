@@ -52,8 +52,9 @@ export const Text = styled.p`
   font-weight: 600;
   line-height: ${props => props.lineheight || "2.4em"};
   margin: ${props => props.margin || "0"};
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     font-size: 1em;
+    line-height: 1.6em;
   }
   ${props =>
     props.small &&
@@ -63,6 +64,10 @@ export const Text = styled.p`
       font-family: "Raleway", sans-serif;
       font-weight: 400;
       line-height: 2em;
+      @media (max-width: 525px) {
+        font-size: 14px;
+        line-height: 1.6em;
+      }
     `};
   ${props =>
     props.large &&
@@ -91,6 +96,9 @@ export const Text = styled.p`
       margin: 0 0.5em;
       font-weight: 600;
       color: #fff;
+      @media (max-width: 525px) {
+        font-size: 14px;
+      }
     `};
   ${props =>
     props.bio &&

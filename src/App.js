@@ -38,7 +38,7 @@ class App extends Component {
             image: Subchannel,
             title: "Subchannel",
             description:
-              "Subchannel is a web-based software as a service (SaaS) offering that enables creators to launch their own video-streaming service and create cashflows from subscription models. Our mission is to empower creators to partner in long term, sustainable broadcast businesses that enriches the world. ",
+              "Subchannel is a web-based software as a service (SaaS) offering that enables creators to launch their own video-streaming service and create cashflows from subscription models. The mission is to empower creators to partner in long term, sustainable broadcast businesses that enriches the world. ",
             services: [
               "UI/UX",
               "Web Design",
