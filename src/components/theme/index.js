@@ -54,7 +54,7 @@ export const Text = styled.p`
   margin: ${props => props.margin || "0"};
   @media (max-width: 768px) {
     font-size: 1em;
-    line-height: 1.6em;
+    line-height: 1.8em;
   }
   ${props =>
     props.small &&

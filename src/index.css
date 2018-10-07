@@ -25,16 +25,10 @@ a {
 
 .container {
   position: relative;
-  transform-origin: center bottom;
-  animation-name: flicker;
-  animation-duration: 5s;
-  animation-delay: 1s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  transform-origin: 50% 90%;
+  animation: flicker 5s ease-in-out alternate infinite;
 }
 .flame {
-  bottom: 0;
   position: absolute;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
@@ -43,22 +37,19 @@ a {
 
 @keyframes flicker {
   0% {
-    transform: rotate(-1deg);
+    transform: skewX(-10deg);
   }
-  20% {
-    transform: rotate(1deg);
+  25% {
+    transform: skewX(-2deg);
   }
-  40% {
-    transform: rotate(-1deg);
+  50% {
+    transform: skewX(-5deg);
   }
-  60% {
-    transform: rotate(1deg) scaleY(1.04);
-  }
-  80% {
-    transform: rotate(-2deg) scaleY(0.92);
+  75% {
+    transform: skewX(-5deg);
   }
   100% {
-    transform: rotate(1deg);
+    transform: skewX(-10deg);
   }
 }
 

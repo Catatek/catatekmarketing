@@ -15,9 +15,9 @@ const Wrapper = styled.div`
 `;
 
 const Img = styled.img`
-  width: 202px;
+  width: 243px;
   margin-left: 2em;
-  height: 57px;
+  height: 70px;
   @media (max-width: 500px) {
     margin-left: 0em;
   }

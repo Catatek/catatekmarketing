@@ -59,14 +59,14 @@ class App extends Component {
               "Creative Services",
               "Business Consulting"
             ]
-          },
-          {
-            image: ShareCropper,
-            title: "Engagitech",
-            description:
-              "AchieveCE is a web-based application that enables industry professionals to take continued education courses as mandated by the state they're licensed in. ",
-            services: ["Web Development"]
           }
+          // {
+          //   image: ShareCropper,
+          //   title: "Engagitech",
+          //   description:
+          //     "AchieveCE is a web-based application that enables industry professionals to take continued education courses as mandated by the state they're licensed in. ",
+          //   services: ["Web Development"]
+          // }
         ]
       };
     });

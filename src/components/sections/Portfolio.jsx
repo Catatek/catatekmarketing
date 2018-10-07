@@ -83,7 +83,7 @@ const StyledRow = styled(Row)`
   width: 80%;
   margin: 2em 0;
   @media (max-width: 500px) {
-    width: 95%;
+    width: 90%;
     margin: 1em 0;
   }
 `;

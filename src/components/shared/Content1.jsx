@@ -43,7 +43,7 @@ const StyledTextRow = styled(Row)`
   width: 80%;
   margin: 4em auto;
   @media (max-width: 500px) {
-    width: 95%;
+    width: 90%;
     margin: 1em 0;
   }
 `;
@@ -89,10 +89,11 @@ export default function Content1({ title, type }) {
       {type === "description" && (
         <StyledTextRow>
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            The truth is, we love what we do. At our core is a team of unmatched
+            expertise, a variety of technical skillsets, and cultural diversity,
+            however, we share one thing that runs deep in who we are as people:
+            we're technologists on a mission to solve evolving, global issues by
+            continuing to learn and challenge ourselves.
           </Text>
         </StyledTextRow>
       )}
