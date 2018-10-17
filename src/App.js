@@ -7,7 +7,8 @@ import Content2 from "./components/shared/Content2";
 import Footer from "./components/shared/Footer";
 import FeedForward from "./assets/feedForwardMock.png";
 import ShareCropper from "./assets/farmAppMock.png";
-import Subchannel from "./assets/subchannelMock.png";
+import Subchannel from "./assets/subchannel.png";
+import Engagitech from "./assets/engagitech.png";
 
 class App extends Component {
   constructor(props) {
@@ -37,6 +38,7 @@ class App extends Component {
           {
             image: Subchannel,
             title: "Subchannel",
+            link: "http://subchannel.tv/",
             description:
               "Subchannel is a web-based software as a service (SaaS) offering that enables creators to launch their own video-streaming service and create cashflows from subscription models. The mission is to empower creators to partner in long term, sustainable broadcast businesses that enriches the world. ",
             services: [
@@ -59,14 +61,15 @@ class App extends Component {
               "Creative Services",
               "Business Consulting"
             ]
+          },
+          {
+            image: Engagitech,
+            title: "Engagitech",
+            link: "http://engagitech.com/",
+            description:
+              "Engagitech is a sister company to the premier brand loyalty company in New York City. They provide all digital agency services including creative work, web development, and digital marketing to boost some of the largest names in the country. ",
+            services: ["Web Development"]
           }
-          // {
-          //   image: ShareCropper,
-          //   title: "Engagitech",
-          //   description:
-          //     "AchieveCE is a web-based application that enables industry professionals to take continued education courses as mandated by the state they're licensed in. ",
-          //   services: ["Web Development"]
-          // }
         ]
       };
     });

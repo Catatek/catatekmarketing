@@ -29,6 +29,7 @@ const Wrapper = styled.div`
 const Img = styled.img`
   width: 100%;
   height: 100%;
+  max-height: 700px;
 `;
 
 const Details = styled.div`
@@ -88,28 +89,30 @@ const StyledRow = styled(Row)`
   }
 `;
 
-function PortfolioItem({ title, description, image, services }) {
+function PortfolioItem({ title, description, image, services, link }) {
   return (
     <div style={{ margin: "1em 0" }}>
-      <Div className="content">
-        <Overlay className="content-overlay" />
-        <Img className="content-image" src={image} />
-        <Details className="content-details fadeIn-bottom">
-          <Row alignitems="center">
-            <Line />
-            <Text white>{title}</Text>
-          </Row>
-          <Text small>{description}</Text>
-          {services &&
-            services.map((key, index) => {
-              return (
-                <Text services key={index}>
-                  {key}
-                </Text>
-              );
-            })}
-        </Details>
-      </Div>
+      <a href={link} target="_blank">
+        <Div className="content">
+          <Overlay className="content-overlay" />
+          <Img className="content-image" src={image} />
+          <Details className="content-details fadeIn-bottom">
+            <Row alignitems="center">
+              <Line />
+              <Text white>{title}</Text>
+            </Row>
+            <Text small>{description}</Text>
+            {services &&
+              services.map((key, index) => {
+                return (
+                  <Text services key={index}>
+                    {key}
+                  </Text>
+                );
+              })}
+          </Details>
+        </Div>
+      </a>
     </div>
   );
 }
@@ -131,6 +134,7 @@ export default class Portfolio extends Component {
                 description={key.description}
                 image={key.image}
                 services={key.services}
+                link={key.link}
               />
             );
           })}
@@ -158,6 +162,7 @@ export default class Portfolio extends Component {
                 description={key.description}
                 image={key.image}
                 services={key.services}
+                link={key.link}
               />
             );
           })}
