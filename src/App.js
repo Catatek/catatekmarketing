@@ -6,9 +6,10 @@ import Content1 from "./components/shared/Content1";
 import Content2 from "./components/shared/Content2";
 import Footer from "./components/shared/Footer";
 import FeedForward from "./assets/feedForwardMock.png";
-import ShareCropper from "./assets/farmAppMock.png";
+import UrbanCrop from "./assets/farmAppMock.png";
 import Subchannel from "./assets/subchannel.png";
 import Engagitech from "./assets/engagitech.png";
+import NGT from "./assets/ngt.png";
 
 class App extends Component {
   constructor(props) {
@@ -50,10 +51,17 @@ class App extends Component {
             ]
           },
           {
-            image: ShareCropper,
-            title: "ShareCropper",
+            image: NGT,
+            title: "Next Generation Tech 360",
             description:
-              "ShareCropper is a native application that enables hobbyist and professional farmers alike to sell their produce direct to the community by creating virtual, localized farmers markets. Our mission is to localize produce consumption by providing an an easy-to-use interface to sell your crops online. Catatek is the original ideator and developers behind ShareCropper.",
+              "NGT is training and developing the next generation of tech stars and business leaders in America by connecting students with community experts. Through the involvement of business community mentors, this program allows leaders in Technology to inspire the next generation by sharing real world experience and fostering young talent to stretch beyond programming.",
+            services: ["Web Design", "Web Development", "Creative Services"]
+          },
+          {
+            image: UrbanCrop,
+            title: "UrbanCrop",
+            description:
+              "UrbanCrop is a native application that enables hobbyist and professional farmers alike to sell their produce direct to the community by creating virtual, localized farmers markets. Our mission is to localize produce consumption by providing an an easy-to-use interface to sell your crops online. Catatek is the original ideator and developers behind ShareCropper.",
             services: [
               "UI/UX",
               "Native Development",
@@ -61,14 +69,6 @@ class App extends Component {
               "Creative Services",
               "Business Consulting"
             ]
-          },
-          {
-            image: Engagitech,
-            title: "Engagitech",
-            link: "http://engagitech.com/",
-            description:
-              "Engagitech is a sister company to the premier brand loyalty company in New York City. They provide all digital agency services including creative work, web development, and digital marketing to boost some of the largest names in the country. ",
-            services: ["Web Development"]
           }
         ]
       };

@@ -49,7 +49,7 @@ const Details = styled.div`
 `;
 
 const Overlay = styled.div`
-  background: rgba(117, 77, 99, 0.75);
+  background: rgba(117, 77, 99, 0.85);
   position: absolute;
   height: 100%;
   width: 100%;
