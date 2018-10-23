@@ -23,18 +23,6 @@ a {
   top: 80%;
 }
 
-.container {
-  position: relative;
-  transform-origin: 50% 90%;
-  animation: flicker 5s ease-in-out alternate infinite;
-}
-.flame {
-  position: absolute;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-}
-
 .globe {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
@@ -48,43 +36,4 @@ a {
   100% {
     transform: rotate(360deg);
   }
-}
-
-@keyframes flicker {
-  0% {
-    transform: skewX(-10deg);
-  }
-  25% {
-    transform: skewX(-2deg);
-  }
-  50% {
-    transform: skewX(-5deg);
-  }
-  75% {
-    transform: skewX(-5deg);
-  }
-  100% {
-    transform: skewX(-10deg);
-  }
-}
-
-@keyframes circles {
-  50% {
-    transform: translateY(-6em) scale(1, 1);
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.cirGroup1 {
-  animation: 1.6s circles infinite;
-}
-
-.cirGroup2 {
-  animation: 3s circles infinite;
-}
-
-.cirGroup3 {
-  animation: 6s circles infinite;
 }

@@ -8,7 +8,7 @@ import Footer from "./components/shared/Footer";
 import FeedForward from "./assets/feedForwardMock.png";
 import UrbanCrop from "./assets/farmAppMock.png";
 import Subchannel from "./assets/subchannel.png";
-import Engagitech from "./assets/engagitech.png";
+// import Engagitech from "./assets/engagitech.png";
 import NGT from "./assets/ngt.png";
 
 class App extends Component {

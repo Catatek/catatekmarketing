@@ -40,22 +40,22 @@ export default function Content2({ title, color, type }) {
         {type === "services" && (
           <div>
             <Text white large>
+              Native (iOS/Android + macOS) development
+              <Span> + </Span>
+              <br />
+              UI/UX design
+              <Span> + </Span>
               Web design <Span> + </Span>
               <br />
               Web development
               <Span> + </Span>
               <br />
-              Native development
-              <Span> + </Span>
-              <br />
-              UI/UX design
-              <Span> + </Span>
               Creative services
               <Span> + </Span>
               <br />
-              Network security
+              Security
               <Span> + </Span>
-              Business consulting
+              Consulting
             </Text>
           </div>
         )}
