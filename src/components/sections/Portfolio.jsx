@@ -75,7 +75,7 @@ const Div = styled.div`
   cursor: pointer;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   @media (max-width: 768px) {
-    width: 350px;
+    width: 345px;
     height: 379px;
   }
 `;

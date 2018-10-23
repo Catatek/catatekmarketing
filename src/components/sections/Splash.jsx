@@ -40,7 +40,7 @@ const Img = styled.img`
 
 const StyledColumn = styled(Column)`
   @media (max-width: 768px) {
-    margin: 3em 0;
+    margin: 1.5em 0;
   }
 `;
 

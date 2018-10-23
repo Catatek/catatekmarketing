@@ -39,7 +39,7 @@ a {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
-  animation: rotate 100s ease-in-out infinite;
+  animation: rotate 75s ease-in-out infinite;
 }
 
 @keyframes rotate {

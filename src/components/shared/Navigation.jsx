@@ -20,6 +20,8 @@ const Img = styled.img`
   height: 70px;
   @media (max-width: 500px) {
     margin-left: 0em;
+    width: 175px;
+    height: 50px;
   }
 `;
 
