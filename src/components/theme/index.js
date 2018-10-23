@@ -20,7 +20,7 @@ export const ContentTitle = styled.h2`
   margin: ${props => (props.content1 ? "0 0 0 2.5em" : "0 2.5em 0 0")};
   @media (max-width: 700px) {
     margin: 0 1em;
-    font-size: 2em;
+    font-size: 2.2em;
   }
 `;
 
@@ -78,7 +78,7 @@ export const Text = styled.p`
       font-weight: 400;
       line-height: 1.8em;
       @media (max-width: 768px) {
-        font-size: 30px;
+        font-size: 24px;
         line-height: 1.6em;
       }
     `};

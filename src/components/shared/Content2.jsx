@@ -24,7 +24,7 @@ const StyledRow = styled(Row)`
   margin: 2em auto;
   width: 60%;
   @media (max-width: 768px) {
-   width: 95%;
+   width: 90%;
    margin: 2em 0;
    justify-content: center;
 `;
