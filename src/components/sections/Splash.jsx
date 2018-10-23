@@ -27,14 +27,14 @@ const Title = styled.h1`
   color: ${props => props.color || "#754D63"};
   margin: 0;
   @media (max-width: 500px) {
-    font-size: 3em;
+    font-size: 2.6em;
   }
 `;
 
 const Img = styled.img`
+  width: 90%;
   @media (max-width: 500px) {
-    width: 250px;
-    height: 250px;
+    width: 50%;
   }
 `;
 
@@ -128,7 +128,7 @@ export default function Splash() {
         <Title color="#C93F50">Amazing</Title>
       </Column>
       <StyledColumn>
-        <Img className="globe" src={Globe} alt="abstract thing" />
+        <Img src={Globe} alt="abstract thing" />
       </StyledColumn>
       <Line primary bottom="13.5em" />
     </Wrapper>
