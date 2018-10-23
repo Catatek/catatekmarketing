@@ -53,6 +53,7 @@ class App extends Component {
           {
             image: NGT,
             title: "Next Generation Tech 360",
+            link: "http://nextgentech360.org/",
             description:
               "NGT is training and developing the next generation of tech stars and business leaders in America by connecting students with community experts. Through the involvement of business community mentors, this program allows leaders in Technology to inspire the next generation by sharing real world experience and fostering young talent to stretch beyond programming.",
             services: ["Web Design", "Web Development", "Creative Services"]

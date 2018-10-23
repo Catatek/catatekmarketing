@@ -1,17 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import { Line, Column } from "../theme/index";
+import Globe from "../../assets/globe.png";
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
-  height: 100%;
+  height: calc(80vh - 105px);
   bottom: 0;
   align-items: center;
   width: 100%;
   position: relative;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
   }
@@ -29,6 +31,13 @@ const Title = styled.h1`
   }
 `;
 
+const Img = styled.img`
+  @media (max-width: 500px) {
+    width: 250px;
+    height: 250px;
+  }
+`;
+
 const StyledColumn = styled(Column)`
   @media (max-width: 768px) {
     margin: 3em 0;
@@ -37,7 +46,7 @@ const StyledColumn = styled(Column)`
 
 function Flame() {
   return (
-    <svg width="131px" height="247px" viewBox="0 0 192 363" version="1.1">
+    <svg width="140px" height="265px" viewBox="0 0 192 363" version="1.1">
       <g
         id="Page-1"
         stroke="none"
@@ -119,7 +128,7 @@ export default function Splash() {
         <Title color="#C93F50">Amazing</Title>
       </Column>
       <StyledColumn>
-        <Flame />
+        <Img className="globe" src={Globe} alt="abstract thing" />
       </StyledColumn>
       <Line primary bottom="13.5em" />
     </Wrapper>

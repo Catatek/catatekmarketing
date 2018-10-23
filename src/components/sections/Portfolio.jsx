@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   height: 100%;
   margin: 6em auto;
   @media (max-width: 768px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }
