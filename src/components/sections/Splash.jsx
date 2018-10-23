@@ -5,14 +5,14 @@ import { Line, Column } from "../theme/index";
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
-  height: calc(80vh - 105px);
+  height: 100%;
   bottom: 0;
   align-items: center;
   width: 100%;
   position: relative;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
   }
 `;
@@ -31,13 +31,13 @@ const Title = styled.h1`
 
 const StyledColumn = styled(Column)`
   @media (max-width: 768px) {
-    margin-bottom: 1em;
+    margin: 3em 0;
   }
 `;
 
 function Flame() {
   return (
-    <svg width="192px" height="363px" viewBox="0 0 192 363" version="1.1">
+    <svg width="131px" height="247px" viewBox="0 0 192 363" version="1.1">
       <g
         id="Page-1"
         stroke="none"
