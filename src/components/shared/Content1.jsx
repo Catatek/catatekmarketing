@@ -53,6 +53,7 @@ const StyledColumn = styled(Column)`
   @media (max-width: 700px) {
     width: 90%;
     align-items: center;
+    margin: 1em 0;
   }
 `;
 

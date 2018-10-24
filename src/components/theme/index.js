@@ -107,6 +107,9 @@ export const Text = styled.p`
       font-weight: 400;
       color: #47566e;
       line-height: 1.8em;
+      @media (max-width: 768px) {
+        margin-bottom: 1.5em;
+      }
     `};
   ${props =>
     props.usertitle &&
@@ -124,7 +127,7 @@ export const Line = styled.div`
   border-radius: 3px;
   position: absolute;
   bottom: ${props => props.bottom};
-  @media (max-width: 768px) {
+  @media (max-width: 1350px) {
     display: none;
   }
 
