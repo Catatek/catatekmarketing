@@ -10,6 +10,7 @@ import UrbanCrop from "./assets/farmAppMock.png";
 import Subchannel from "./assets/subchannel.png";
 // import Engagitech from "./assets/engagitech.png";
 import NGT from "./assets/ngt.png";
+import Logos from "./components/shared/Logos";
 
 class App extends Component {
   constructor(props) {
@@ -85,6 +86,7 @@ class App extends Component {
         <Content1 type="description" title="Fueled by passion" />
         <Content2 type="services" color="#754d63" title="Services" />
         <Content1 type="avatars" title="Technologists with a purpose" />
+        <Logos />
         <Content2 type="contact" color="#C93F50" title="Contact" />
         <Footer />
       </div>

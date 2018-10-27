@@ -7,7 +7,7 @@ import Github from "../../assets/github.svg";
 import Medium from "../../assets/medium.svg";
 
 const Wrapper = styled.div`
-  padding: 6em 0;
+  padding: 6em 0 0 0;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
