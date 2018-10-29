@@ -86,8 +86,14 @@ export const Text = styled.p`
     props.nav &&
     css`
       font-size: 18px;
-      margin: 0 0.5em;
+      padding: 0.1em 1.25em;
       font-weight: 400;
+      border: ${props =>
+        props.colored ? ".5px solid transparent" : "0.5px solid #ccc;"}
+      border-left: ${props => props.leftborder && "0px"};
+      color: ${props => props.colored && "#fff"};
+      background-color: ${props => props.colored && "#c93f50"};
+      font-weight: ${props => props.colored && "600"};
     `};
   ${props =>
     props.services &&

@@ -18,6 +18,9 @@ const Wrapper = styled.div`
   width: 100%;
   height: 75px;
   margin: 0 0 2em 0;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export default function Logos() {

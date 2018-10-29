@@ -6,7 +6,7 @@ import Globe from "../../assets/globe.png";
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
-  height: calc(80vh - 105px);
+  height: calc(90vh - 105px);
   bottom: 0;
   align-items: center;
   width: 100%;
@@ -32,13 +32,14 @@ const Title = styled.h1`
 `;
 
 const Img = styled.img`
-  width: 90%;
+  width: 80%;
   @media (max-width: 500px) {
     width: 50%;
   }
 `;
 
 const StyledColumn = styled(Column)`
+  margin: 2em 0 0 0;
   @media (max-width: 768px) {
     margin: 1.5em 0;
   }
@@ -55,7 +56,7 @@ export default function Splash() {
       <StyledColumn>
         <Img src={Globe} alt="abstract thing" />
       </StyledColumn>
-      <Line primary bottom="13.5em" />
+      <Line primary bottom="15.5em" />
     </Wrapper>
   );
 }

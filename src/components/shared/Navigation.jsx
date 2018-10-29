@@ -6,8 +6,11 @@ import { Row, Text } from "../theme/index";
 const Wrapper = styled.div`
   width: 100%;
   height: 105px;
+  position: fixed;
+  z-index: 1000;
   display: flex;
   align-items: center;
+  background-color: #fff;
   justify-content: space-between;
   @media (max-width: 500px) {
     justify-content: center;
@@ -40,13 +43,16 @@ export default class Navigation extends Component {
         <Img src={Logo} alt="Catatek Logo" />
         <StyledRow>
           <Text nav>
-            <a href="#work">Work</a>
+            <a href="#work">projects</a>
           </Text>
-          <Text nav>
-            <a href="#who">Who</a>
+          <Text nav leftborder>
+            <a href="#who">meet me</a>
           </Text>
-          <Text nav>
-            <a href="#services">Services</a>
+          <Text nav leftborder>
+            <a href="#services">services</a>
+          </Text>
+          <Text nav leftborder colored>
+            <a href="#contact">contact</a>
           </Text>
         </StyledRow>
       </Wrapper>
