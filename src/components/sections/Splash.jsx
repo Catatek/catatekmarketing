@@ -6,11 +6,12 @@ import Globe from "../../assets/globe.png";
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
-  height: calc(90vh - 105px);
+  height: calc(90vh - 75px);
   bottom: 0;
   align-items: center;
   width: 100%;
   position: relative;
+  margin: 3em 0 0 0;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     height: 100%;
@@ -49,7 +50,7 @@ export default function Splash() {
   return (
     <Wrapper>
       <Column>
-        <Title>Make</Title>
+        <Title>Create</Title>
         <Title>Something</Title>
         <Title color="#C93F50">Amazing</Title>
       </Column>

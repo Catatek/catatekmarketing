@@ -31,7 +31,7 @@ const StyledRow = styled(Row)`
 
 export default function Content2({ title, color, type }) {
   return (
-    <Wrapper color={color} id={type === "services" && "services"}>
+    <Wrapper color={color} id={type === "services" ? "services" : "contact"}>
       <Row justifycontent="flex-end">
         <Line secondary bottom="1.5em" />
         <ContentTitle color="#fff">{title}</ContentTitle>
