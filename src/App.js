@@ -8,7 +8,8 @@ import Footer from "./components/shared/Footer";
 import FeedForward from "./assets/feedForwardMock.png";
 import UrbanCrop from "./assets/farmAppMock.png";
 import Subchannel from "./assets/subchannel.png";
-// import Engagitech from "./assets/engagitech.png";
+import HireHumanely from "./assets/hireHumanlyMock.png";
+import Creative from "./assets/creativeMock.png";
 import NGT from "./assets/ngt.png";
 import Logos from "./components/shared/Logos";
 
@@ -28,7 +29,7 @@ class App extends Component {
             image: FeedForward,
             title: "Feed Forward",
             description:
-              "Feed Forward is a mobile software as a service (SaaS) offering designed to assist post-graduate medical students with completing their required professional activities, while holding academic medical doctors accountable with evaluations. Our infrastructure will offer organizations, such as medical schools, hospitals, and residency programs greater insight and analytics into how their academic body is performing.",
+              "Feed Forward is a mobile software as a service (SaaS) offering designed to assist post-graduate medical students with completing their required professional activities, while holding academic medical doctors accountable with evaluations.",
             services: [
               "UI/UX",
               "Native Development",
@@ -50,6 +51,21 @@ class App extends Component {
               "Creative Services",
               "Business Consulting"
             ]
+          },
+          {
+            image: HireHumanely,
+            title: "HireHumanely",
+            description:
+              "HireHumanely is a A.I. assistant for enterprise recruiting.",
+            services: ["Web Design", "Web Development"]
+          },
+          {
+            image: Creative,
+            title: "Creative114",
+            link: "http://creative114.com/",
+            description:
+              "Creative114 is a marketing agency with a focus in providing value to customers from small to large.",
+            services: ["Web Design", "Web Development", "Creative Services"]
           },
           {
             image: NGT,

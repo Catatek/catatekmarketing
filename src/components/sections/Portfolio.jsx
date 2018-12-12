@@ -29,7 +29,6 @@ const Wrapper = styled.div`
 const Img = styled.img`
   width: 100%;
   height: 100%;
-  max-height: 700px;
 `;
 
 const Details = styled.div`
@@ -66,14 +65,13 @@ const Overlay = styled.div`
 const Div = styled.div`
   position: relative;
   margin: auto;
-  width: 90%;
+  width: 95%;
   height: 100%;
-  max-width: 650px;
-  max-height: 700px;
+  max-width: 600px;
   margin: 1em;
   border-radius: 3px;
   cursor: pointer;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  // box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   @media (max-width: 768px) {
     width: 345px;
     height: 379px;
@@ -95,7 +93,7 @@ function PortfolioItem({ title, description, image, services, link }) {
       <a href={link} target="_blank">
         <Div className="content">
           <Overlay className="content-overlay" />
-          <Img className="content-image" src={image} />
+          <Img src={image} />
           <Details className="content-details fadeIn-bottom">
             <Row alignitems="center">
               <Line />
@@ -120,8 +118,8 @@ function PortfolioItem({ title, description, image, services, link }) {
 export default class Portfolio extends Component {
   render() {
     const { work } = this.props;
-    const first = work.slice(0, 2);
-    const second = work.slice(2, 4);
+    const first = work.slice(0, 3);
+    const second = work.slice(3, 6);
 
     return (
       <Wrapper id="work">
