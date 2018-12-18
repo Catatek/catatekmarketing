@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   background-color: #fff;
   justify-content: space-between;
   box-shadow: ${props => props.active && "0 0 10px rgba(0, 0, 0, 0.1)"};
-  @media (max-width: 500px) {
+  @media (max-width: 780px) {
     justify-content: center;
   }
 `;
@@ -23,6 +23,9 @@ const Img = styled.img`
   width: 205px;
   margin-left: 2em;
   height: 60px;
+  @media (max-width: 780px) {
+    margin-left: 0em;
+  }
   @media (max-width: 500px) {
     margin-left: 0em;
     width: 175px;
@@ -33,7 +36,7 @@ const Img = styled.img`
 const StyledRow = styled(Row)`
   align-items: center;
   margin: 0 2em 0 0;
-  @media (max-width: 500px) {
+  @media (max-width: 780px) {
     display: none;
   }
 `;

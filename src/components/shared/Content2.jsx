@@ -5,9 +5,9 @@ import { Text, Row, Line, ContentTitle } from "../theme/index";
 
 const Wrapper = styled.div`
   background-color: ${props => props.color};
-  padding: 6em 0 1em 0;
-  min-height: 75vh;
-  @media (max-width: 768px) {
+  padding: 3em 0 0 0;
+  height: 700px;
+  @media (max-width: 780px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,9 +21,10 @@ const Span = styled.span`
 `;
 
 const StyledRow = styled(Row)`
-  margin: 2em auto;
-  width: 60%;
-  @media (max-width: 768px) {
+  margin: 3em auto;
+  width: 70%;
+  align-items: center;
+  @media (max-width: 780px) {
    width: 90%;
    margin: 2em 0;
    justify-content: center;

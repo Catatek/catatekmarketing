@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   justify-content: center;
   height: 100%;
   margin: 6em auto;
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: center;
@@ -71,19 +71,33 @@ const Div = styled.div`
   margin: 1em;
   border-radius: 3px;
   cursor: pointer;
-  // box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
-  @media (max-width: 768px) {
-    width: 345px;
-    height: 379px;
+  @media (min-width: 2000px) {
+    max-width: 850px;
+  }
+  @media (min-width: 3000px) {
+    max-width: 1012px;
+  }
+  @media (max-width: 780px) {
+    width: 425px;
+  }
+  @media (max-width: 500px) {
+    width: 350px;
   }
 `;
 
 const StyledRow = styled(Row)`
   width: 80%;
   margin: 2em 0;
+  max-width: 600px;
   @media (max-width: 500px) {
     width: 90%;
     margin: 1em 0;
+  }
+  @media (max-width: 780px) {
+    text-align: center;
+  }
+  @media (min-width: 2000px) {
+    max-width: 850px;
   }
 `;
 

@@ -7,12 +7,15 @@ import Github from "../../assets/github.svg";
 import Medium from "../../assets/medium.svg";
 
 const Wrapper = styled.div`
-  padding: 6em 0 0 0;
+  height: 650px;
+  padding: 3em 0 0 0;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3em 0;
+    height: 100%;
+    text-align: center;
   }
 `;
 
@@ -40,7 +43,7 @@ const StyledRow2 = styled(Row)`
 `;
 
 const StyledTextRow = styled(Row)`
-  width: 80%;
+  width: 60%;
   margin: 4em auto;
   @media (max-width: 500px) {
     width: 90%;
@@ -142,7 +145,7 @@ export default function Content1({ title, type }) {
           <StyledRow2 alignitems="center" justifycontent="space-evenly">
             <Span>+</Span>
             <StyledColumn justifycontent="center" alignitems="center">
-              <Text>Many, many others from all over the world...</Text>
+              <Text>Many others with various talents and skills</Text>
             </StyledColumn>
           </StyledRow2>
         </StyledRow>
