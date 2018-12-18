@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `;
 
 const Img = styled.img`
-  width: 152px;
+  width: 148px;
   height: 42px;
   margin-right: 2em;
 `;

@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   z-index: 1000;
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background: #f2f5f7;
   justify-content: space-between;
   box-shadow: ${props => props.active && "0 0 10px rgba(0, 0, 0, 0.1)"};
   @media (max-width: 780px) {
@@ -74,7 +74,7 @@ export default class Navigation extends Component {
           <Text nav leftborder>
             <a href="#services">services</a>
           </Text>
-          <Text nav leftborder colored>
+          <Text className="drift-open-chat" nav leftborder colored>
             <a href="#contact">contact</a>
           </Text>
         </StyledRow>

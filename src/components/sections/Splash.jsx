@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   justify-content: space-evenly;
   height: 750px;
   bottom: 0;
+  background: #f2f5f7;
   align-items: center;
   width: 100%;
   position: relative;

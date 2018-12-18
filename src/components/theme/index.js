@@ -88,12 +88,17 @@ export const Text = styled.p`
       font-size: 18px;
       padding: 0.1em 1.25em;
       font-weight: 400;
+      cursor: pointer;
       border: ${props =>
         props.colored ? ".5px solid transparent" : "0.5px solid #ccc;"}
       border-left: ${props => props.leftborder && "0px"};
       color: ${props => props.colored && "#fff"};
-      background-color: ${props => props.colored && "#c93f50"};
+      background-color: ${props => (props.colored ? "#c93f50" : "#fff")};
       font-weight: ${props => props.colored && "600"};
+      transition: 450ms;
+      &:hover {
+        background-color: ${props => (props.colored ? "#d46774" : "#f2f5f7")};
+      }
     `};
   ${props =>
     props.services &&
@@ -128,8 +133,9 @@ export const Text = styled.p`
 `;
 
 export const Line = styled.div`
-  width: 136px;
+  width: 125px;
   height: 14px;
+  opacity: 0.95;
   border-radius: 3px;
   position: absolute;
   bottom: ${props => props.bottom};
