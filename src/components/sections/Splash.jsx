@@ -18,6 +18,7 @@ const Wrapper = styled.div`
     height: 100%;
     justify-content: space-between;
     align-items: center;
+    padding: 1.5em 0;
   }
 `;
 

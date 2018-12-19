@@ -38,6 +38,7 @@ const StyledRow = styled(Row)`
   margin: 0 2em 0 0;
   @media (max-width: 780px) {
     display: none;
+    margin: 0;
   }
 `;
 
