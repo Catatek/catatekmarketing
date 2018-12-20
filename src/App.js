@@ -1,17 +1,13 @@
 import React, { Component } from "react";
-import Navigation from "./components/shared/Navigation";
-import Splash from "./components/sections/Splash";
-import Portfolio from "./components/sections/Portfolio";
-import Content1 from "./components/shared/Content1";
-import Content2 from "./components/shared/Content2";
-import Footer from "./components/shared/Footer";
+import { BrowserRouter, Route } from "react-router-dom";
+import Home from "./components/screens/Home";
+import CaseStudy from "./components/screens/CaseStudy";
 import FeedForward from "./assets/feedForwardMock.png";
 import UrbanCrop from "./assets/farmAppMock.png";
 import Subchannel from "./assets/subchannel.png";
 import HireHumanely from "./assets/hireHumanlyMock.png";
 import Creative from "./assets/creativeMock.png";
 import NGT from "./assets/ngt.png";
-import Logos from "./components/shared/Logos";
 
 class App extends Component {
   constructor(props) {
@@ -28,6 +24,7 @@ class App extends Component {
           {
             image: FeedForward,
             title: "Feed Forward",
+            link: "/casestudy/feedforward",
             description:
               "Feed Forward is a mobile software as a service (SaaS) offering designed to assist post-graduate medical students with completing their required professional activities, while holding academic medical doctors accountable with evaluations.",
             services: [
@@ -41,7 +38,7 @@ class App extends Component {
           {
             image: Subchannel,
             title: "Subchannel",
-            link: "http://subchannel.tv/",
+            link: "/casestudy/subchannel",
             description:
               "Subchannel is a web-based software as a service (SaaS) offering that enables creators to launch their own video-streaming service and create cashflows from subscription models. The mission is to empower creators to partner in long term, sustainable broadcast businesses that enriches the world. ",
             services: [
@@ -62,7 +59,7 @@ class App extends Component {
           {
             image: Creative,
             title: "Creative114",
-            link: "http://creative114.com/",
+            link: "/casestudy/creative114",
             description:
               "Creative114 is a marketing agency with a focus in providing value to customers from small to large.",
             services: ["Web Design", "Web Development", "Creative Services"]
@@ -70,7 +67,7 @@ class App extends Component {
           {
             image: NGT,
             title: "Next Generation Tech 360",
-            link: "http://nextgentech360.org/",
+            link: "/casestudy/ngt",
             description:
               "NGT is training and developing the next generation of tech stars and business leaders in America by connecting students with community experts. Through the involvement of business community mentors, this program allows leaders in Technology to inspire the next generation by sharing real world experience and fostering young talent to stretch beyond programming.",
             services: ["Web Design", "Web Development", "Creative Services"]
@@ -78,6 +75,7 @@ class App extends Component {
           {
             image: UrbanCrop,
             title: "UrbanCrop",
+            link: "/casestudy/urbancrop",
             description:
               "UrbanCrop is a native application that enables hobbyist and professional farmers alike to sell their produce direct to the community by creating virtual, localized farmers markets. Our mission is to localize produce consumption by providing an an easy-to-use interface to sell your crops online. Catatek is the original ideator and developers behind ShareCropper.",
             services: [
@@ -92,20 +90,33 @@ class App extends Component {
       };
     });
   }
-
   render() {
+    const { portfolio } = this.state;
     return (
-      <div>
-        <Navigation />
-        <Splash />
-        <Portfolio work={this.state.portfolio} />
-        <Content1 type="description" title="Fueled by passion" />
-        <Content2 type="services" color="#754d63" title="Services" />
-        <Content1 type="avatars" title="Technologists with a purpose" />
-        <Logos />
-        <Content2 type="contact" color="#C93F50" title="Contact" />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <div>
+          <Route
+            exact
+            path="/"
+            render={() => {
+              return (
+                <Home portfolio={portfolio} onEnter={window.scrollTo(0, 0)} />
+              );
+            }}
+          />
+          <Route
+            path="/casestudy/:id"
+            render={() => {
+              return (
+                <CaseStudy
+                  portfolio={portfolio}
+                  onEnter={window.scrollTo(0, 0)}
+                />
+              );
+            }}
+          />
+        </div>
+      </BrowserRouter>
     );
   }
 }

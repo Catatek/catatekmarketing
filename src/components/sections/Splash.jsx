@@ -8,7 +8,8 @@ const Wrapper = styled.div`
   justify-content: space-evenly;
   height: 750px;
   bottom: 0;
-  background: #f2f5f7;
+  background: ${props => props.background};
+  background-size: cover;
   align-items: center;
   width: 100%;
   position: relative;
@@ -58,19 +59,23 @@ const StyledColumn = styled(Column)`
   }
 `;
 
-export default function Splash() {
+export default function Splash({ type, img }) {
   return (
-    <Wrapper>
-      <Column>
-        <Title>Innovate</Title>
-        <Title>Create</Title>
-        <Title>Hack</Title>
-        <Title color="#C93F50">Lab</Title>
-      </Column>
-      <StyledColumn>
-        <Img src={Globe} alt="abstract thing" />
-      </StyledColumn>
-      <Line primary bottom="14em" />
+    <Wrapper background={type === "home" ? "#f2f5f7" : `url('${img}')`}>
+      {type === "home" && (
+        <React.Fragment>
+          <Column>
+            <Title>Innovate</Title>
+            <Title>Create</Title>
+            <Title>Hack</Title>
+            <Title color="#C93F50">Lab</Title>
+          </Column>
+          <StyledColumn>
+            <Img src={Globe} alt="abstract thing" />
+          </StyledColumn>
+          <Line primary bottom="14em" />
+        </React.Fragment>
+      )}
     </Wrapper>
   );
 }

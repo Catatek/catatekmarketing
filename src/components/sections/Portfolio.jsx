@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Column, Text, Row } from "../theme/index";
-// import {Link, withRouter} from 'react-router'
+import { Link } from "react-router-dom";
 
 const Line = styled.div`
   background-color: #fff;
@@ -105,27 +105,27 @@ const StyledRow = styled(Row)`
 function PortfolioItem({ title, description, image, services, link }) {
   return (
     <div style={{ margin: "1em 0" }}>
-      {/* <Link to={`/${link}`}> */}
-      <Div className="content">
-        <Overlay className="content-overlay" />
-        <Img src={image} />
-        <Details className="content-details fadeIn-bottom">
-          <Row alignitems="center">
-            <Line />
-            <Text white>{title}</Text>
-          </Row>
-          <Text small>{description}</Text>
-          {services &&
-            services.map((key, index) => {
-              return (
-                <Text services key={index}>
-                  {key}
-                </Text>
-              );
-            })}
-        </Details>
-      </Div>
-      {/* </Link> */}
+      <Link to={`${link}`}>
+        <Div className="content">
+          <Overlay className="content-overlay" />
+          <Img src={image} />
+          <Details className="content-details fadeIn-bottom">
+            <Row alignitems="center">
+              <Line />
+              <Text white>{title}</Text>
+            </Row>
+            <Text small>{description}</Text>
+            {services &&
+              services.map((key, index) => {
+                return (
+                  <Text services key={index}>
+                    {key}
+                  </Text>
+                );
+              })}
+          </Details>
+        </Div>
+      </Link>
     </div>
   );
 }
