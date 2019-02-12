@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import William from "../../assets/william.webp";
+import William from "../../assets/william.png";
 import { Column, Text, Row, Line, ContentTitle } from "../theme/index";
 import Linkedin from "../../assets/linkedin.svg";
 import Github from "../../assets/github.svg";

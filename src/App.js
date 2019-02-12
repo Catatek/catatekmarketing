@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./components/screens/Home";
 import CaseStudy from "./components/screens/CaseStudy";
-import FeedForward from "./assets/feedForwardMock.webp";
-import UrbanCrop from "./assets/farmAppMock.webp";
-import Subchannel from "./assets/subchannel.webp";
-import HireHumanely from "./assets/hireHumanlyMock.webp";
-import Creative from "./assets/creativeMock.webp";
-import NGT from "./assets/ngt.webp";
+import FeedForward from "./assets/feedforwardmock.jpg";
+import UrbanCrop from "./assets/farmAppMock.jpg";
+import Subchannel from "./assets/subchannelmock.jpg";
+import HireHumanely from "./assets/hirehumanelymock.jpg";
+import Creative from "./assets/creativemock.jpg";
+import NGT from "./assets/ngt.jpg";
 
 class App extends Component {
   constructor(props) {
