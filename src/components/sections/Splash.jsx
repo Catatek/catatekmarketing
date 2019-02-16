@@ -68,7 +68,7 @@ export default function Splash({ type, img }) {
             <Title>Innovate</Title>
             <Title>Create</Title>
             <Title>Hack</Title>
-            <Title color="#C93F50">Make</Title>
+            <Title color="#C93F50">Lab</Title>
           </Column>
           <StyledColumn>
             <Img src={Globe} alt="abstract thing" />
