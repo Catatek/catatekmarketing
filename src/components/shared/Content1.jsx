@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import William from "../../assets/william.png";
+import William from "../../assets/william.jpg";
 import { Column, Text, Row, Line, ContentTitle } from "../theme/index";
 import Linkedin from "../../assets/linkedin.svg";
 import Github from "../../assets/github.svg";
@@ -22,6 +22,7 @@ const Wrapper = styled.div`
 const Img = styled.img`
   width: 250px;
   height: 250px;
+  border-radius: 12px;
 `;
 
 const StyledRow = styled(Row)`
